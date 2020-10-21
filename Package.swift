@@ -11,6 +11,6 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "YPImagePicker", dependencies: ["YPImagePicker"], path: "Sources"),
+        .target(name: "YPImagePicker", path: "Source"),
     ]
 )
