@@ -10,7 +10,7 @@ let package = Package(
     .library(name: "YPImagePicker", targets: ["YPImagePicker"])
   ],
   dependencies: [
-    .package(url: "https://github.com/freshOS/Stevia", from: "4.8.0"),
+    .package(url: "https://github.com/freshOS/Stevia", from: "5.1.0"),
     .package(url: "https://github.com/HHK1/PryntTrimmerView.git", .upToNextMajor(from: "4.0.1"))
   ],
   targets: [
