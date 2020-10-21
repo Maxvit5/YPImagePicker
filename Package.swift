@@ -11,7 +11,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/freshOS/Stevia"),
-    .package(url: "https://github.com/HHK1/PryntTrimmerView.git")
+    .package(url: "https://github.com/HHK1/PryntTrimmerView")
   ],
   targets: [
     .target(
