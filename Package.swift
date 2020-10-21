@@ -10,8 +10,8 @@ let package = Package(
     .library(name: "YPImagePicker", targets: ["YPImagePicker"])
   ],
   dependencies: [
-    .package(url: "https://github.com/freshOS/Stevia", .upToNextMajor(from: "4.7.3")),
-    .package(url: "https://github.com/HHK1/PryntTrimmerView", .upToNextMajor(from: "4.0.1"))
+    .package(url: "https://github.com/freshOS/Stevia.git", .upToNextMajor(from: "4.7.3")),
+    .package(url: "https://github.com/HHK1/PryntTrimmerView.git", .upToNextMajor(from: "4.0.1"))
   ],
   targets: [
     .target(
@@ -19,8 +19,5 @@ let package = Package(
       dependencies: ["YPImagePicker"],
       path: "Source"
     )
-  ],
-  swiftLanguageVersions: [
-    .v5
   ]
 )
