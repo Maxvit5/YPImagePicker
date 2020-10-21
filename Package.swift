@@ -8,6 +8,8 @@ let package = Package(
     ],
     products: [
         .library(name: "YPImagePicker", targets: ["YPImagePicker"]),
+        .library(name: "Stevia", targets: ["Stevia"]),
+        .library(name: "PryntTrimmerView", targets: ["PryntTrimmerView"]),
     ],
     dependencies: ["Stevia", "PryntTrimmerView"],
     targets: [
