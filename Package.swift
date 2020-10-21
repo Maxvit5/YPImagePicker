@@ -2,17 +2,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "YPImagePicker",
-    platforms: [
-        .iOS(.v12),
-    ],
-    products: [
-        .library(name: "YPImagePicker", targets: ["YPImagePicker"]),
-        .library(name: "Stevia", targets: ["Stevia"]),
-        .library(name: "PryntTrimmerView", targets: ["PryntTrimmerView"]),
-    ],
-    dependencies: ["Stevia", "PryntTrimmerView"],
-    targets: [
-        .target(name: "YPImagePicker", path: "Source"),
-    ]
+  name: "YPImagePicker",
+  platforms: [
+    .iOS(.v12)
+  ],
+  products: [
+    .library(name: "YPImagePicker", targets: ["YPImagePicker"])
+  ],
+  dependencies: [
+    .package(url: "https://github.com/freshOS/Stevia"),
+    .package(url: "https://github.com/HHK1/PryntTrimmerView.git")
+  ],
+  targets: [
+    .target(
+      name: "YPImagePicker",
+      dependencies: ["YPImagePicker"],
+      path: "Source"
+    )
+  ],
+  swiftLanguageVersions: [
+    .v5
+  ]
 )
